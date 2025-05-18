@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barra superior fixa */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.navbar .nav-separar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar img {
+    height: 5%;
+    width: 5%;
+}
+
+/* Espaçamento para o conteúdo principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 20px 150px;
+    box-sizing: border-box;
+}
+
+/* Estilo do container principal */
+#cxprincipal {
+    width: 1000px;
+    height: auto; /* Ajusta a altura para o conteúdo interno */
+    border-radius: 15px;
+    position: relative;
+    margin: 0 auto; /* Centraliza o container */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo do banner */
+#banner {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+/* Estilo dos containers */
+#cxamigo, #cxcomercio, #cxusuario, #cxconsultaamigo, #cxconsultacomercio, #cxconsultauser {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Posicionamento dos containers */
+
+#cxcomercio {
+    margin-left: 333px;
+}
+
+#cxusuario {
+    margin-left: 666px;
+}
+
+#cxconsultaamigo {
+    margin-top: 333px;
+}
+
+#cxconsultacomercio {
+    margin-top: 333px;
+    margin-left: 333px;
+}
+
+#cxconsultauser {
+    margin-top: 333px;
+    margin-left: 666px;
+}
+
+/* Rodapé fixo */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Classe para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+img{
+    height: 200px;
+}

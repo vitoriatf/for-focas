@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+/* Barra superior fixa */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Espaçamento para o conteúdo principal */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 60px; /* Ajusta o padding para não sobrepor a barra superior e o rodapé */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 450px; /* Largura máxima da seção */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    display: none; /* Oculta todas as seções por padrão */
+}
+
+section.active {
+    display: block; /* Exibe a seção ativa */
+}
+section h2 {
+    font-size: 24px; /* Tamanho da fonte para o título */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    border-bottom: 2px solid #4CAF50; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaçamento abaixo da linha */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Torna o texto em negrito */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"] {
+    width: calc(100% - 22px); /* Ajusta a largura para o padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form p {
+    font-size: 14px; /* Tamanho da fonte do parágrafo */
+    color: #666; /* Cor do texto (cinza claro) */
+    margin-top: 10px; /* Espaçamento acima do parágrafo */
+    margin-bottom: 0; /* Remove a margem abaixo do parágrafo */
+    line-height: 1.5; /* Altura da linha para melhorar a legibilidade */
+    text-align: center; /* Centraliza o texto do parágrafo */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000; /* Garante que o rodapé esteja acima do conteúdo */
+}

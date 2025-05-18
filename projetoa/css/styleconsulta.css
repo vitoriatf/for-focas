@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+/* Barra superior fixa */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Espaçamento para o conteúdo principal */
+.content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px 70px; /* Ajusta o padding para não sobrepor a barra superior e o rodapé */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    flex-direction: column;
+    min-height: calc(100vh - 140px); /* Ajusta a altura para considerar a altura da barra superior e do rodapé */
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+    width: 500px; /* Largura máxima do formulário */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Labels e campos do formulário */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Link para exclusão */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #f44336;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé fixo */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000; /* Garante que o rodapé esteja acima do conteúdo */
+}
+
+/* Classe para ocultar elementos */
+.hidden {
+    display: none;
+}
